@@ -8,3 +8,4 @@ task 6: script that creates a directory named my first directory in the /tmp/ di
 task 7: script to move the file betty from /tmp/ to /tmp/my first directory
 task 8: script to delete the file betty, the file betty is in /tmp/my first directory
 task 9: script to delete the directory my first directory that is in the /tmp directory
+task 10: script that changes the working directory to the previous one
