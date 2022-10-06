@@ -1,1 +1,2 @@
-I'm now a ALX Student, this is my first repository as a full-stack engineer
+1: 0x00 shell basics
+2: 0x01 Shell permissions
