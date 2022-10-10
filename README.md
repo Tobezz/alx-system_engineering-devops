@@ -1,2 +1,3 @@
-1: 0x00 shell basics
-2: 0x01 Shell permissions
+0x00. Shell, basics
+0x01. Shell, permissions
+Shell, I/O Redirection
