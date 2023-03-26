@@ -1,0 +1,59 @@
+Image Url
+
+https://imgur.com/a/OpCrBtt
+
+
+
+Task 2.  Design of Three-Server Web Infrastructure:
+
+Firewall 1 --> Web Server 1 (HTTP) --> MySQL Server 1 (Read-Only)
+
+Firewall 2 --> Web Server 2 (HTTP) --> MySQL Server 2 (Read-Only)
+
+Firewall 3 --> Load Balancer (HTTPS Termination) --> Web Server 3 (HTTPS) --> MySQL Server 1 (Write) & MySQL Server 2 (Write)
+
+Additions and Explanations:
+
+Cache:
+In web infrastructure, a cache is a mechanism used to temporarily store frequently accessed data or content to reduce the load on the server and improve the overall performance of the system.
+
+When a user requests data from a website, the cache checks if the data is already stored in its memory. If the data is available, the cache immediately returns it to the user, without having to access the server, thus reducing the response time and the load on the server.
+
+Firewalls:
+Firewalls are added to secure the web infrastructure by filtering out unauthorized traffic and limiting access to the web servers. They act as a barrier between the internet and the servers, preventing potential threats such as DDoS attacks, malware, and hacking attempts.
+
+SSL Certificate:
+The SSL certificate is added to ensure that the traffic served over HTTPS is encrypted, providing secure communication between the user's browser and the web server. This is especially important when sensitive information is exchanged between the user and the website, such as login credentials, personal information, and payment details.
+
+Monitoring Clients:
+Monitoring clients such as Sumologic are added to track the performance of the web infrastructure and detect any issues or anomalies. This helps in identifying and resolving any issues before they impact the end-users. The monitoring tool collects data such as server CPU and memory usage, network traffic, response time, error rate, etc.
+
+How the monitoring tool is collecting data:
+The specific details of how monitoring tools collect data for Sumo Logic or other monitoring services may vary depending on the tool and the service being used. However, in general, monitoring tools typically collect data through various means such as:
+
+Agents: Monitoring agents are software components that are installed on servers, workstations, or other devices to collect data from those devices. These agents can collect various types of data, such as performance metrics, log data, and network data, and send it to the monitoring service.
+
+APIs: Many monitoring services provide APIs that allow other software applications to send data to the service. Monitoring tools can use these APIs to send data collected from various sources to the monitoring service.
+
+Syslog: Syslog is a standard protocol used for sending log messages to a central server. Many monitoring tools can send data to a syslog server, which can then forward the data to a monitoring service.
+
+SNMP: Simple Network Management Protocol (SNMP) is a protocol used for managing and monitoring network devices. Many monitoring tools can use SNMP to collect data from network devices and send it to a monitoring service.
+
+Cloud APIs: If the monitoring tool is used to monitor cloud-based infrastructure, such as Amazon Web Services (AWS) or Microsoft Azure, it can use cloud APIs provided by those services to collect data and send it to the monitoring service.
+
+Once the monitoring tool has collected the data, it is typically sent to the monitoring service in a specific format, such as JSON or XML, and then analyzed and visualized to provide insights into system performance, security, and other important metrics.
+
+Monitoring QPS:
+To monitor QPS (Queries Per Second) of the web server, the monitoring tool can track the number of incoming requests to the server and the response time for each request. This data can then be analyzed to identify any spikes or drops in the QPS, which may indicate a performance issue. Additionally, load testing tools such as JMeter or Gatling can be used to simulate a large number of users accessing the website simultaneously, helping to identify any potential bottlenecks or performance issues.
+Issues with the Infrastructure:
+
+1. SSL Termination at the Load Balancer Level:
+Terminating SSL at the load balancer level is an issue because it exposes the traffic between the load balancer and the web server to potential interception, making it vulnerable to attacks. It is recommended to terminate SSL at the web server level to prevent this issue.
+
+2. Only One MySQL Server Capable of Accepting Writes:
+Having only one MySQL server capable of accepting writes is an issue because it creates a single point of failure, making the entire web infrastructure vulnerable to downtime in case of a failure. It is recommended to have multiple MySQL servers with read-write capabilities and use load balancing to distribute the load.
+
+3. Servers with All the Same Components:
+Having servers with all the same components (database, web server, and application server) might be a problem because it creates a lack of redundancy and diversity in the infrastructure. In case of a vulnerability or failure in one component, the entire system is affected, leading to downtime or reduced performance. It is recommended to have a diverse infrastructure with different components to minimize the risk of a single point of failure.
+
+

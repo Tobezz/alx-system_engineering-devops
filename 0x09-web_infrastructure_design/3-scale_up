@@ -1,0 +1,42 @@
+Image Url
+
+https://imgur.com/a/rT1cE8Z
+
+
+Task 3. here's a design for a three server web infrastructure that hosts the website www.foobar.com, with security, encrypted traffic, and monitoring:
+
+Load Balancer:
+>We will use HAproxy as a load balancer to distribute incoming traffic across multiple servers to improve performance and availability.
+>We will configure HAproxy as a cluster with the other load balancer to ensure high availability in case of any failure.
+
+Web Server:
+>We will use Apache or Nginx as a web server to serve static content and forward dynamic requests to the application server.
+>We will install SSL/TLS certificates on the web server to ensure secure encrypted communication between the client and the server.
+
+Application Server:
+>We will use a dedicated server running Node.js or any other web application framework to handle dynamic content, server-side processing, and database queries.
+>We will also install SSL/TLS certificates on the application server to ensure secure communication between the web server and the application server.
+
+Database Server:
+>We will use a dedicated server running a database management system (DBMS) such as MySQL or PostgreSQL to store and retrieve data required by the web application.
+>We will secure the database server with proper authentication, access control, and encryption to ensure data privacy and integrity.
+
+Monitoring:
+>We will set up a monitoring system such as Zabbix or Nagios to keep track of the infrastructure's health, performance, and security.
+>We will configure alerts and notifications for critical events such as server downtime, high CPU usage, or abnormal network traffic.
+
+Overall, this infrastructure design ensures scalability, availability, security, and performance for the website www.foobar.com.
+
+Additions and Explanations:
+
+Cache:
+In web infrastructure, a cache is a mechanism used to temporarily store frequently accessed data or content to reduce the load on the server and improve the overall performance of the system.
+
+When a user requests data from a website, the cache checks if the data is already stored in its memory. If the data is available, the cache immediately returns it to the user, without having to access the server, thus reducing the response time and the load on the server.
+
+Firewalls:
+Firewalls are added to secure the web infrastructure by filtering out unauthorized traffic and limiting access to the web servers. They act as a barrier between the internet and the servers, preventing potential threats such as DDoS attacks, malware, and hacking attempts.
+
+SSL Certificate:
+The SSL certificate is added to ensure that the traffic served over HTTPS is encrypted, providing secure communication between the user's browser and the web server. This is especially important when sensitive information is exchanged between the user and the website, such as login credentials, personal information, and payment details.
+
