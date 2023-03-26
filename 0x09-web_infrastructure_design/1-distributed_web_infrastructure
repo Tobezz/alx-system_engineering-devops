@@ -1,0 +1,65 @@
+Image url
+
+https://imgur.com/a/CZfjn8A
+
+
+
+
+Task 1. On a whiteboard, design a three server web infrastructure that hosts the website www.foobar.com.
+Requirements:
+
+You must add:
+2 servers
+1 web server (Nginx)
+1 application server
+1 load-balancer (HAproxy)
+1 set of application files (your code base)
+1 database (MySQL)
+You must be able to explain some specifics about this infrastructure:
+>For every additional element, why you are adding it
+>What distribution algorithm your load balancer is configured with and how it works
+>Is your load-balancer enabling an Active-Active or Active-Passive setup, explain the difference between both
+>How a database Primary-Replica (Master-Slave) cluster works
+>What is the difference between the Primary node and the Replica node in regard to the application
+You must be able to explain what the issues are with this infrastructure:
+>Where are SPOF
+>Security issues (no firewall, no HTTPS)
+>No monitoring
+
+here's a design for a three-server web infrastructure that hosts the website www.foobar.com:
+
+Load Balancer Server:
+This server would be responsible for balancing the incoming traffic to the website. It would receive the incoming requests from the users and then forward them to the appropriate web server. It will be configured with a load balancing algorithm that would distribute the load evenly among the web servers.
+
+Web Server 1:
+This server would be responsible for serving the static content of the website like images, HTML, CSS, and JavaScript files. It will also handle the incoming requests related to the web application that doesn't require dynamic data processing.
+
+Web Server 2:
+This server would be responsible for processing the dynamic content requests of the website. It would be equipped with the necessary software and tools to run the web application code, access databases, and render pages with dynamic content.
+
+Here's how the traffic flow would look like:
+
+Users enter www.foobar.com into their web browser.
+The DNS server resolves the domain name to the IP address of the Load Balancer Server.
+The Load Balancer Server receives the incoming request and forwards it to the appropriate server based on the load balancing algorithm.
+If the request is for static content, the Load Balancer Server forwards it to Web Server 1. If the request is for dynamic content, the Load Balancer Server forwards it to Web Server 2.
+The respective server processes the request and sends the response back to the Load Balancer Server.
+The Load Balancer Server sends the response back to the user who made the request.
+
+Here are some specifics about this infrastructure:
+
+Load Balancer: We are adding a load balancer to distribute incoming requests across multiple servers to improve performance, scalability, and availability. The load balancer we are using is HAproxy, which is a popular open-source load balancer. We will configure it to use the Round Robin algorithm, which distributes requests evenly among all the available servers.
+
+Active-Active Setup: We will configure the load balancer to use an Active-Active setup, which means that both the application servers will be active and handling incoming requests simultaneously. The load balancer will distribute incoming requests across both the servers to balance the load and avoid overloading a single server.
+
+Primary-Replica Cluster: We will configure the MySQL database as a Primary-Replica (Master-Slave) cluster, which involves having one primary node and one or more replica nodes. The primary node will handle all write requests, and the replica nodes will handle read requests. This setup improves database performance and provides fault tolerance.
+
+Primary and Replica Nodes: The primary node is responsible for handling write requests, maintaining data consistency, and replicating data to the replica nodes. The replica nodes are responsible for handling read requests and maintaining a copy of the data from the primary node. The primary node is critical for the application as it handles all write requests, and any failure or downtime in the primary node will affect the application's functionality.
+
+Here are some issues with this infrastructure:
+
+Single Point of Failure: There is a single point of failure (SPOF) in this infrastructure, which is the load balancer. If the load balancer fails or experiences downtime, the entire application will be inaccessible. To address this, we can add another load balancer and configure it in a failover setup.
+
+Security Issues: There are some security issues with this infrastructure, such as the lack of a firewall and HTTPS. Without a firewall, the servers are vulnerable to attacks from malicious actors. Without HTTPS, the application's data is not encrypted, making it susceptible to interception and theft. We should add a firewall and enable HTTPS to improve the security of the application.
+
+No Monitoring: There is no monitoring in this infrastructure, which means that we have no visibility into the servers' performance, uptime, and resource usage. Monitoring is essential for identifying issues before they become critical and ensuring that the application is performing optimally. We should add a monitoring solution such as Nagios or Zabbix to monitor the servers and the application's performance.
