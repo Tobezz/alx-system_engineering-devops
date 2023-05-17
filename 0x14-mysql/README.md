@@ -1,5 +1,6 @@
 0x14. MySQL
 
+
 General
 What is the main role of a database
 What is a database replica
