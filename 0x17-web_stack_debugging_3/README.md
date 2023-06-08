@@ -7,7 +7,7 @@ When debugging, sometimes logs are not enough. Either because the software is br
 This was the fourth in a series of web stack debugging projects. In these projects, I was given broken/bugged webstacks in isolated containers, and tasked with fixing the web stack to a working state. For each task, I wrote a script automating the commands necessary to fix the web stack.
 
 ## Tasks_0 📃
-
+✔ [0-strace_is_your_friend.pp](https://github.com/Tobezz/alx-system_engineering-devops/blob/master/0x17-web_stack_debugging_3/0-strace_is_your_friend.pp)
 Using strace, find out why Apache is returning a 500 error. Once you find the issue, fix it and then automate it using Puppet (instead of using Bash as you were previously doing).
 
 # Hint:
