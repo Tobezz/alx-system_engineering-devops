@@ -7,11 +7,7 @@
 mandatory
 
 For this task head to https://www.datadoghq.com/ and sign up for a free Datadog account. When signing up, you’ll have the option of selecting statistics from your current stack that Datadog can monitor for you. Once you have an account set up, follow the instructions given on the website to install the Datadog agent.
-
 <img width="1343" alt="image" src="https://github.com/Tobezz/alx-system_engineering-devops/assets/104366538/f266b720-68e6-408d-9fbd-2f6e3431de60">
-
-![Metrics](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2019/6/6b0ea6345a6375437845.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230609%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230609T170132Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=d282dc5906fa254c6d28c716efaa2a32f761b860d61eccb45d9c62038e0be6b1)
-
 Sign up for Datadog - Please make sure you are using the US website of Datagog (.com)
 Install datadog-agent on web-01
 Create an application key
@@ -23,10 +19,8 @@ If needed, you will need to update the hostname of your server
 # 1. Monitor some metrics
 mandatory
 Score: 0.0% (Checks completed: 0.0%)
-Among the litany of data your monitoring service can report to you are system metrics. You can use these metrics to determine statistics such as reads/writes per second, which can help your company determine if/how they should scale. Set up some monitors within the Datadog dashboard to monitor and alert you of a few. You can read about the various system metrics that you can monitor here: System Check.
-
-![Metrics](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2019/6/6a4551974aadc181e97a.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230609%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230609T170132Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=b7e1617f496b33087b861867b2894f2278ad29002cdaa1e92cfd779594b4ae3c)
-
+Among the litany of data your monitoring service can report to you are system metrics. You can use these metrics to determine statistics such as reads/writes per second, which can help your company determine if/how they should scale. Set up some monitors within the Datadog dashboard to monitor and alert you of a few. You can read about the various system metrics that you can monitor here: System Check
+<img width="1339" alt="image" src="https://github.com/Tobezz/alx-system_engineering-devops/assets/104366538/345dc6a7-6be8-4181-9470-b41f686abc17">
 Set up a monitor that checks the number of read requests issued to the device per second.
 Set up a monitor that checks the number of write requests issued to the device per second.
 
