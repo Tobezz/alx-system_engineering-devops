@@ -8,6 +8,8 @@ mandatory
 
 For this task head to https://www.datadoghq.com/ and sign up for a free Datadog account. When signing up, you’ll have the option of selecting statistics from your current stack that Datadog can monitor for you. Once you have an account set up, follow the instructions given on the website to install the Datadog agent.
 
+<img width="1343" alt="image" src="https://github.com/Tobezz/alx-system_engineering-devops/assets/104366538/f266b720-68e6-408d-9fbd-2f6e3431de60">
+
 ![Metrics](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2019/6/6b0ea6345a6375437845.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230609%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230609T170132Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=d282dc5906fa254c6d28c716efaa2a32f761b860d61eccb45d9c62038e0be6b1)
 
 Sign up for Datadog - Please make sure you are using the US website of Datagog (.com)
