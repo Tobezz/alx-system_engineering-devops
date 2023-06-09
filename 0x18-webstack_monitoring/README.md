@@ -1,6 +1,6 @@
 # 0x18. Webstack monitoring
 
-[Monitoring](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/281/hb3pAsO.png)
+![Monitoring](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/281/hb3pAsO.png)
 
 # Tasks
 0. Sign up for Datadog and install datadog-agent
