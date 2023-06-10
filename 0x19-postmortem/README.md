@@ -44,7 +44,7 @@ Requirements:
 
 > explain in detail what was causing the issue
 > explain in detail how the issue was fixed
-####Corrective and preventative measures must contain:
+#### Corrective and preventative measures must contain:
 
 > what are the things that can be improved/fixed (broadly speaking)
 > a list of tasks to address the issue (be very specific, like a TODO, example: patch Nginx server, add monitoring on server memory…)
