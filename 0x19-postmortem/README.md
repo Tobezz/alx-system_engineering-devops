@@ -15,12 +15,14 @@ A postmortem is a tool widely used in the tech industry. After any outage, the t
 Read or watch:
 
 [Incident Report, also referred to as a Postmortem](https://intranet.alxswe.com/rltoken/vkEjk-M6yBWW-wyB-7-I9Q)
+
 [The importance of an incident postmortem process](https://intranet.alxswe.com/rltoken/QwvgCYt2zjKRT7qMRe7I8A)
+
 [What is an Incident Postmortem?](https://intranet.alxswe.com/rltoken/kBjhT2PIr4X-U8FLI97--Q)
 
 ## Tasks
 
-### 0. My first postmortem
+### [0. My first postmortem](https://github.com/Tobezz/alx-system_engineering-devops/tree/master/0x19-postmortem)
 
 Using one of the web stack debugging project issue or an outage you have personally face, write a postmortem. Most of you will never have faced an outage, so just get creative and invent your own :)
 
@@ -50,7 +52,7 @@ Be brief and straight to the point, between 400 to 600 words
 
 While postmortem format can vary, stick to this one so that you can get properly reviewed by your peers.
 
-### 1. Make people want to read your postmortem
+### [1. Make people want to read your postmortem](https://github.com/Tobezz/alx-system_engineering-devops/tree/master/0x19-postmortem)
 
 We are constantly stormed by a quantity of information, it’s tough to get people to read you.
 
