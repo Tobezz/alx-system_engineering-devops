@@ -20,7 +20,7 @@ Read or watch:
 
 ## Tasks
 
-# 0. My first postmortem
+### 0. My first postmortem
 
 Using one of the web stack debugging project issue or an outage you have personally face, write a postmortem. Most of you will never have faced an outage, so just get creative and invent your own :)
 
@@ -50,7 +50,7 @@ Be brief and straight to the point, between 400 to 600 words
 
 While postmortem format can vary, stick to this one so that you can get properly reviewed by your peers.
 
-# 1. Make people want to read your postmortem
+### 1. Make people want to read your postmortem
 
 We are constantly stormed by a quantity of information, it’s tough to get people to read you.
 
